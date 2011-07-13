@@ -516,7 +516,7 @@ class Deployer
     logger.info("[Getting Logs]")
     logger.info("[Getting Logs] Started")
     threads = ThreadPool.new(100)
-    path_to_logs = "#{remote_root}logs/"
+    path_to_logs = "#{@remote_root}logs/"
 
     @log_repo += "/#{Time.now.strftime("%d-%m-%y")}/#{Time.now.strftime("%H.%M")}/"
     @log_repo.gsub!("//","/")
